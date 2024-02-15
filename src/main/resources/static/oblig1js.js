@@ -76,7 +76,7 @@ function visBilett() {
 
 }
 //Funksjon for å slette arrayet og tømmet html outputten.
-function slettArray()
+function slettArray(){
     kinoArray = [];
     let output = document.getElementById("output");
     output.innerHTML = ""; // Tømmer output-elementet etter at vi har tømt arrayet
