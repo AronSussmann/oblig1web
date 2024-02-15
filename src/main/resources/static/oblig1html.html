@@ -7,18 +7,13 @@
 <body>
 <h1>Bestilling av kinobiletter</h1>
 
-
-
-
-<label for="Filmer">Velg film her:</label>
-
-<select name="Filmer" id="Filmer">
+<label for="filmer">Velg film her:</label>
+<select name="filmer" id="filmer">
     <option value="Pjango">Pjango</option>
     <option value="Y-men">Y-men</option>
     <option value="Fantastic 5">Fantastic 5</option>
     <option value="Revengers">Revengers</option>
 </select>
-
 <table>
     <tr>
         <td><label for="antall">Antall:</label></td>
@@ -40,7 +35,7 @@
 
     <tr>
         <td><label for="telefonNr">Telefonnr:</label></td>
-        <td><input type="number" id="telefonNr" name="telefonNr" ></td>
+        <td><input type="text" id="telefonNr" name="telefonNr" ></td>
     </tr>
 
     <tr>
@@ -59,5 +54,8 @@
 
 <button onclick="slettArray()">Slett alle bilettene</button>
 <script src="oblig1js.js"></script>
+
+
+
 </body>
 </html>
