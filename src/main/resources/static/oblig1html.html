@@ -9,6 +9,7 @@
 
 
 
+
 <label for="Filmer">Velg film her:</label>
 
 <select name="Filmer" id="Filmer">
@@ -20,31 +21,31 @@
 
 <table>
     <tr>
-        <td><label for="Antall">Antall:</label></td>
-        <td><input type="text" id="Antall" name="Antall" style="width: 25px;"></td>
+        <td><label for="antall">Antall:</label></td>
+        <td><input type="number" min="1" step="1" max="100"  id="antall" name="antall"  style="width: 40px;"></td>
     </tr>
 </table>
 
 
 <table>
     <tr>
-        <td><label for="Fornavn">Fornavn:</label></td>
-        <td><input type="text" id="Fornavn" name="Fornavn"></td>
+        <td><label for="fornNavn">Fornavn:</label></td>
+        <td><input type="text" id="fornNavn" name="fornNavn" ></td>
     </tr>
 
     <tr>
-        <td><label for="Etternavn">Etternavn:</label></td>
-        <td><input type="text" id="Etternavn" name="Etternavn"></td>
+        <td><label for="etterNavn">Etternavn:</label></td>
+        <td><input type="text" id="etterNavn" name="etterNavn" ></td>
     </tr>
 
     <tr>
-        <td><label for="Telefonnr">Telefonnr:</label></td>
-        <td><input type="text" id="Telefonnr" name="Telefonnr"></td>
+        <td><label for="telefonNr">Telefonnr:</label></td>
+        <td><input type="number" id="telefonNr" name="telefonNr" ></td>
     </tr>
 
     <tr>
-        <td><label for="Epost">Epost:</label></td>
-        <td><input type="text" id="Epost" name="Epost"></td>
+        <td><label for="epost">Epost:</label></td>
+        <td><input type="text" id="epost" name="epost" ></td>
     </tr>
 
 </table>
@@ -52,9 +53,11 @@
 <button onclick="visBilett()">Kjøp Biletter</button>
 
 <h2>Alle billetter</h2>
+<p id="output"></p>
 
-<button onclick="slett()">Slett alle bilettene</button>
 
 
+<button onclick="slettArray()">Slett alle bilettene</button>
+<script src="oblig1js.js"></script>
 </body>
 </html>
