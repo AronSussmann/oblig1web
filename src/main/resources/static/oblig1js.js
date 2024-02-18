@@ -38,7 +38,7 @@ function kjopBilett() {
     // Om kravene er blitt oppfyllet blir inputen lagret som et objekt
     const kinoinfo = {
         filmer: filmer,
-        antall: antallBiletter,
+        antallBiletter: antallBiletter,
         fornNavn: fornNavn,
         etterNavn: etterNavn,
         telefonNr: telefonNr,
@@ -54,7 +54,7 @@ function kjopBilett() {
     for (let i = 0; i < kinoBilettArray.length; i++) {
         output.innerHTML += "<p><strong>Billett " + (i + 1) + ":</strong><br>" +
             "Film: " + kinoBilettArray[i].filmer +
-            " Antall: " + kinoBilettArray[i].antallBiletter +
+            " Antall: " + kinoBilettArray[i].antallBiletter  +
             " Navn: " + kinoBilettArray[i].fornNavn +
             " " + kinoBilettArray[i].etterNavn +
             " Telefonnr: " + kinoBilettArray[i].telefonNr +
